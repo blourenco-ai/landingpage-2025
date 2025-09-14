@@ -1,0 +1,164 @@
+<!doctype html>
+<!--
+  Landing Page genérica
+  Salve como: index.html
+  Uso: abrir no navegador ou publicar em GitHub Pages / Netlify / Vercel
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Página de apresentação genérica — produto/serviço. Fácil de customizar.">
+  <meta name="author" content="Seu Nome">
+  <title>Landing Page Genérica — Seu Produto</title>
+  <!-- Open Graph básico -->
+  <meta property="og:title" content="Seu Produto — Página Principal">
+  <meta property="og:description" content="Conheça a solução X que ajuda com Y">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/path/to/preview.png">
+
+  <!-- Google Fonts (opcional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">SP</div>
+        <div>
+          <div style="font-weight:700">Seu Produto</div>
+          <div style="font-size:12px;color:var(--muted)">Solução simples e direta</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#features">Recursos</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#pricing">Preços</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <a class="btn" href="#signup">Comece grátis</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="card" style="padding:18px;margin-bottom:18px;display:inline-block;color:var(--accent);font-weight:700;border-radius:999px">Lançamento 2025 • Beta aberto</div>
+        <h1>Solucione <span style="color:var(--accent)">um problema real</span> com uma ferramenta simples</h1>
+        <p>Landing page genérica pronta para ser customizada: destaque, benefícios, prova social e CTA. Ideal para apresentar produto, curso, app ou serviço.</p>
+
+        <div class="features">
+          <span class="feature">Rápido</span>
+          <span class="feature">Responsivo</span>
+          <span class="feature">Acessível</span>
+        </div>
+
+        <div style="margin-top:28px">
+          <a class="btn" href="#signup">Quero testar</a>
+          <a style="margin-left:12px;color:var(--muted)" href="#about">Saiba mais →</a>
+        </div>
+
+        <div style="margin-top:36px;color:var(--muted);font-size:14px">
+          <strong>Use cases:</strong> landing para captação de leads, pré-venda, portfólio ou página de evento.
+        </div>
+      </div>
+
+      <aside class="card signup" id="signup">
+        <h3>Garanta seu lugar</h3>
+        <p class="small">Cadastre-se para receber novidades e acesso antecipado.</p>
+        <form id="leadForm" onsubmit="return false;" novalidate>
+          <input class="input" type="text" id="name" placeholder="Seu nome" required>
+          <input class="input" type="email" id="email" placeholder="seu@exemplo.com" required>
+          <button id="submitBtn" class="btn" style="width:100%">Quero acessar</button>
+          <div id="formMsg" class="small" style="margin-top:8px"></div>
+        </form>
+      </aside>
+    </section>
+
+    <section id="features">
+      <div class="grid3">
+        <div class="card">
+          <h4>Design claro</h4>
+          <p class="small">Componentes limpos, foco em conversão e leitura fácil em qualquer dispositivo.</p>
+        </div>
+        <div class="card">
+          <h4>Integrações</h4>
+          <p class="small">Pronto para integração com ferramentas de analytics, CRM e envio de e-mails.</p>
+        </div>
+        <div class="card">
+          <h4>Performance</h4>
+          <p class="small">Peso reduzido, carregamento rápido e otimização para SEO básico.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="grid2">
+      <div class="card">
+        <h3>Sobre o produto</h3>
+        <p class="small">Este template é um ponto de partida. Personalize textos, cores, imagens e conecte ao seu back-end para capturar leads.</p>
+        <ul class="small">
+          <li>HTML5 sem dependências</li>
+          <li>Formulário com validação básica em JavaScript</li>
+          <li>Compatível com hospedagem estática</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Prova social</h3>
+        <div class="testi">
+          <div class="avatar">JS</div>
+          <div>
+            <div style="font-weight:700">Joana S.</div>
+            <div class="small">"Melhor landing que já usamos — conversão aumentou 27%."</div>
+          </div>
+        </div>
+        <div style="height:12px"></div>
+        <div class="testi">
+          <div class="avatar">ML</div>
+          <div>
+            <div style="font-weight:700">Mario L.</div>
+            <div class="small">"Fácil de adaptar e fica ótimo no celular."</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h3>Planos</h3>
+      <div class="grid3" style="margin-top:12px">
+        <div class="card">
+          <h4>Grátis</h4>
+          <p class="small">Funcionalidades básicas — ideal para testes e MVPs.</p>
+        </div>
+        <div class="card">
+          <h4>Pro</h4>
+          <p class="small">Recursos avançados e integrações.</p>
+        </div>
+        <div class="card">
+          <h4>Enterprise</h4>
+          <p class="small">SLA e suporte dedicado para grandes clientes.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>
+        <strong>Seu Produto</strong>
+        <div class="small">© 2025 — Todos os direitos reservados</div>
+      </div>
+      <div class="small">Feito com ♥ • <a href="#">Política de Privacidade</a></div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
